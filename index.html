@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Deputados</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section class="section-top" id="section-top">
+    <header id="header">
+      <nav>
+        <div class="logo-section">
+          <img src="logo2.png" alt="logotipo" title="Logotipo" id="logotipo">
+        </div>
+        <div id="listnav">
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#cardsection"> DEPUTADOS</a></li>
+            <li><a href="#partidos-section"> PARTIDOS</a></li>
+            <li><a href="#news-section"> NOTÍCIAS</a></li>
+            <li><a href="#events"> EVENTOS</a></li>
+            <li><a href="#projects-section"> PROJETOS DE LEI</a></li>
+            <li><a href="#contato"> CONTATO</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="maintext">
+      <h1>QUEM SÃO OS DEPUTADOS</h1>
+      <h3 class="subtitle">Conheça seus deputados, seus partidos e legislaturas.</h3>
+      <button type="button" id="mainbutton">DEPUTADOS</button>
+    </div>
+  </section>
+  <main>
+    <div id="cardsection">
+      <h4>DEPUTADOS</h4>
+      <h3 class="cardtitle">Consulte aqui os Deputados da Lesgislatura atual:</h3>
+      <input type="search" placeholder="Nome do Deputado"><br>
+      <button type="button" class="searchbutton"><i class="fa fa-search"></i> BUSCAR</button>
+    </div>
+    <section class="cardrow">
+      <div class="card-unit">
+        <img class="cardimg"
+          src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/09/tse-vicente-oficial-150001718204.jpg?w=1024"
+          alt="candidato" title="candidato" />
+        <h3>Fulano De Tal <br>(Partido)</h3>
+        <h5>Detalhes:</h5>
+        <ul class="cardlist">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Eum quaerat tenetur dolore quo repudiandae laudantium eius dolorem explicabo architecto dolor placeat ad?
+          </li>
+        </ul>
+        <div>
+          <ul class="iconslist">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-linkedin-square"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-unit">
+        <img class="cardimg" src="https://www.camara.leg.br/internet/deputado/bandep/160655.jpgmaior.jpg"
+          alt="candidato" title="candidato" />
+        <h3>Fulano De Tal <br>(Partido)</h3>
+        <h5>Detalhes:</h5>
+        <ul class="cardlist">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Eum quaerat tenetur dolore quo repudiandae laudantium eius dolorem explicabo architecto dolor placeat ad?
+          </li>
+        </ul>
+        <div class="icondiv">
+          <ul class="iconslist">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-linkedin-square"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-unit">
+        <img class="cardimg"
+          src="data:image/jpeg;base64,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"
+          alt="candidato" title="candidato" />
+        <h3>Fulano De Tal <br>(Partido)</h3>
+        <h5>Detalhes:</h5>
+        <ul class="cardlist">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Eum quaerat tenetur dolore quo repudiandae laudantium eius dolorem explicabo architecto dolor placeat ad?
+          </li>
+        </ul>
+        <div class="icondiv">
+          <ul class="iconslist">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-linkedin-square"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-unit">
+        <img class="cardimg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROt7YUKa7excpJt4CR59ZwHzhWDfV1mr0eQ&usqp=CAU"
+          alt="candidato" title="candidato" />
+        <h3>Fulano De Tal <br>(Partido)</h3>
+        <h5>Detalhes:</h5>
+        <ul class="cardlist">
+          <li>Lorem ipsum dolor sit amet conseetur adipisicing elit.</li>
+          <li>Eum quaerat tenetur dolore quo repudiandae laudantium eius dolorem explicaborchitecto dolor placeat ad?
+          </li>
+        </ul>
+        <div class="icondiv">
+          <ul class="iconslist">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-linkedin-square"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="cardrow">
+      <div class="card-unit">
+        <img class="cardimg"
+          src="data:image/jpeg;base64,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"
+          alt="candidato" title="candidato" />
+        <h3>Fulano De Tal <br>(Partido)</h3>
+        <h5>Detalhes:</h5>
+        <ul class="cardlist">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Eum quaerat tenetur dolore quo repudiandae laudantium eius dolorem explicabo architecto dolor placeat ad?
+          </li>
+        </ul>
+        <div class="icondiv">
+          <ul class="iconslist">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-linkedin-square"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-unit">
+        <img class="cardimg"
+          src="https://www.giving.cuimc.columbia.edu/sites/default/files/styles/cola_media_800/public/cups-profile/headshot/925e05b0-a9cc-11eb-98e0-85321e343034.jpg?itok=LcOrvim6"
+          alt="candidato" title="candidato" />
+        <h3>Fulano De Tal <br>(Partido)</h3>
+        <h5>Detalhes:</h5>
+        <ul class="cardlist">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Eum quaerat tenetur dolore quo repudiandae laudantium eius dolorem explicabo architecto dolor placeat ad?
+          </li>
+        </ul>
+        <div class="icondiv">
+          <ul class="iconslist">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-linkedin-square"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-unit">
+        <img class="cardimg" src="data:image/jpeg;base64,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"
+          alt="candidato" title="candidato" />
+        <h3>Fulano De Tal <br>(Partido)</h3>
+        <h5>Detalhes:</h5>
+        <ul class="cardlist">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Eum quaerat tenetur dolore quo repudiandae laudantium eius dolorem explicabo architecto dolor placeat ad?
+          </li>
+        </ul>
+        <div class="icondiv">
+          <ul class="iconslist">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-linkedin-square"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-unit">
+        <img class="cardimg"
+          src="https://th.bing.com/th/id/R.f15a1325939d46a4d0d56902ba7b16f0?rik=dHpOSp%2fl1UOd9w&riu=http%3a%2f%2fwww.rightclickstudios.com%2fwp-content%2fuploads%2f2015%2f01%2f20130904_RC89993.jpg&ehk=NHHeTx18Uw2OWIxEU%2b75K68kPDTGaRZX711cVtEqbFo%3d&risl=&pid=ImgRaw&r=0"
+          alt="candidato" title="candidato" />
+        <h3>Fulano De Tal <br>(Partido)</h3>
+        <h5>Detalhes:</h5>
+        <ul class="cardlist">
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Eum quaerat tenetur dolore quo repudiandae laudantium eius dolorem explicabo architecto dolor placeat ad?
+          </li>
+        </ul>
+        <div class="icondiv">
+          <ul class="iconslist">
+            <li><i class="fa fa-facebook-square"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-linkedin-square"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="aftercard" id="partidos-section">
+      <h4>PARTIDOS</h4>
+      <h3 class="cardtitle">Consulte aqui os Partidos existentes:</h3>
+      <input type="search" placeholder="Nome do Partido"><br>
+      <button type="button" class="searchbutton"><i class="fa fa-search"></i> BUSCAR</button>
+    </div>
+    <div class="partidoslogo">
+      <div class="item-logo">
+        <img src="https://logodownload.org/wp-content/uploads/2016/09/PSD_Logo_3letras_fundo-03.jpg" alt="logo-psd"
+          title="PSD" class="psd">
+        <h4>Partido XPTO</h4>
+        <ul>
+          <li><i class="fa fa-facebook-square"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-linkedin-square"></i></li>
+        </ul>
+      </div>
+      <div class="item-logo">
+        <img
+          src="https://th.bing.com/th/id/R.6f575c36d21e76570850aa86a8adebd4?rik=AkgyUwdlJHTIWw&riu=http%3a%2f%2f1.bp.blogspot.com%2f_o7e-QjEKT6c%2fTJ8g-PbLIUI%2fAAAAAAAAAH0%2fZDlqjQScWNg%2fs1600%2fLogo%2bPV.jpg&ehk=UfRTpgzKjy%2fc2RWh1OJ%2bwV31CszSrFouJCzo0wejtA0%3d&risl=&pid=ImgRaw&r=0"
+          alt="logo-partido-verde" title="PARTIDO VERDE">
+        <h4>Partido XPTO</h4>
+        <ul>
+          <li><i class="fa fa-facebook-square"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-linkedin-square"></i></li>
+        </ul>
+      </div>
+      <div class="item-logo">
+        <img src="https://th.bing.com/th/id/OIP.t37J3uTFL1elz8gZVhxcfQHaFQ?pid=ImgDet&rs=1" alt="logo-pt" title="PT">
+        <h4>Partido XPTO</h4>
+        <ul>
+          <li><i class="fa fa-facebook-square"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-linkedin-square"></i></li>
+        </ul>
+      </div>
+      <div class="item-logo">
+        <img src="https://logodownload.org/wp-content/uploads/2016/09/ptb-logo-1.png" alt="logo-ptb" title="PTB">
+        <h4>Partido XPTO</h4>
+        <ul>
+          <li><i class="fa fa-facebook-square"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-linkedin-square"></i></li>
+        </ul>
+      </div>
+    </div>
+    <section class="news-section" id="news-section">
+      <h3>Noticias</h3>
+      <article class="news-unit">
+        <img src="https://th.bing.com/th/id/R.ee4b40014ffa57cb8967e0b685aa1f29?rik=FDMb%2f%2f94h0qIQw&pid=ImgRaw&r=0"
+          alt="queimadas-pantanal" title="Queimadas Pantanal" />
+        <h4>Comitiva da Câmara dos Deputados visita
+          áreas queimadas no Pantanal</h4>
+        <p>
+          A Câmara dos Deputados visita, de hoje a domingo (20), localidades
+          atingidas pelos incêndios florestais no Pantanal mato-grossense. O
+          grupo de parlamentares irá se reunir com entidades, bombeiros e
+          gestores da região em busca de soluções para a grave emergência
+          ambiental.
+        </p><br>
+        <p>Fonte: Agência Câmara de Notícias/18/09/2020-16:01</p>
+        <br><br>
+        <button type="button" class="searchbutton"><i class="fa fa-search"></i> VEJA MAIS
+          NOTÍCIAS</button>
+      </article>
+    </section>
+    <section class="events" id="events">
+      <h4>EVENTOS</h4>
+      <h3>Consulte aqui os Eventos agendados:</h3>
+      <div>
+        <input type="text" placeholder="Descrição do Evento">
+        <input type="text" placeholder="Data do Evento">
+        <button type="button">BUSCAR</button>
+      </div>
+      <div class="events2">
+        <section class="events-details">
+          <div class="eventsleft">
+            <ul>
+              <li><i class="fa fa-calendar"></i> 22/09/2020</li>
+              <li><i class="fa fa-clock-o"></i> 10:00</li>
+            </ul>
+          </div>
+          <div class="eventsleft-details">
+            <p>CÂMARA DOS DEPUTADOS</p>
+            <p>A atual situação da ANCINE - Evento Técnico</p>
+            <p>Anexo II, Plenário 06</p>
+          </div>
+        </section>
+        <section class="events-details">
+          <div class="eventsleft">
+            <ul>
+              <li><i class="fa fa-calendar"></i> 22/09/2020</li>
+              <li><i class="fa fa-clock-o"></i> 10:00</li>
+            </ul>
+          </div>
+          <div class="eventsleft-details">
+            <p>CÂMARA DOS DEPUTADOS</p>
+            <p>A atual situação da ANCINE - Evento Técnico</p>
+            <p>Anexo II, Plenário 06</p>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="projects-section" id="projects-section">
+      <h3>Projetos de Lei</h3>
+      <h4>Consulte aqui os projectos de Lei em votação:</h4>
+      <div class="projects-table">
+        <table class="maintable">
+          <tr>
+            <th>N do PL</th>
+            <th>Ementa</th>
+            <th>Situação</th>
+          </tr>
+
+          <tr>
+            <td>2469/2022</td>
+            <td>Institui o Dia Nacional do rádio, a ser comemorado, em 25 de setembro.</td>
+            <td>Em tramitação</td>
+          </tr>
+
+          <tr>
+            <td>2469/2022</td>
+            <td>Institui o Dia Nacional do rádio, a ser comemorado, em 25 de setembro.</td>
+            <td>Em tramitação</td>
+          </tr>
+
+          <tr>
+            <td>2469/2022</td>
+            <td>Institui o Dia Nacional do rádio, a ser comemorado, em 25 de setembro.</td>
+            <td>Em tramitação</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h3>CONTATO</h3>
+    <div class="contato" id="contato">
+      <h4>Fale Conosco</h4>
+      <p>Deixe-nos suas críticas, elogios e sugestões!</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam alias eum id esse odio rem, dicta repellendus
+        fuga saepe magnam facilis illum sed. Eius ipsum, voluptas nemo dolorem temporibus excepturi?</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam alias eum id esse odio rem, dicta repellendus
+        fuga saepe magnam facilis illum sed. Eius ipsum, voluptas nemo dolorem temporibus excepturi?</p>
+    </div>
+    <button type="button" class="searchbutton"><i class="fa fa-search"></i> ENVIE-NOS UM EMAIL</button>
+    <button onclick="document.getElementById('section-top').scrollIntoView();" id="button-footer">↑</button>
+    <div class="faixa-footer">
+      <p>Instituto Infnet - Assessment Fundamento de Programação Web</p>
+    </div>
+  </footer>
+</body>
+
+</html>
